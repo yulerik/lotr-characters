@@ -1,0 +1,88 @@
+@font-face {
+    font-family: ringbearer;
+    src: url('./ringbearer.medium.ttf');
+}
+body {
+    text-align: center;
+    margin-top: 150px;
+    padding: 15px;
+    background-color: #dbb47b;
+    font-family: ringbearer;
+    letter-spacing: .3em;
+}
+nav {
+    position: fixed;
+    top: 0;
+    height: 150px;
+    left: 0;
+    width: fill;
+    border-bottom: 1px solid black;
+    background-color: #9e6513;
+    display: flex;
+    align-items: center;
+
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%
+    /* top: 0; */
+}
+nav li {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer {
+    color: #d1cbbf;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;      
+    background-color: #192723;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+          
+}
+footer a {
+    color: #d1cbbf;
+}
+#fellowship {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-top: 75px;
+
+}
+#characters {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    list-style: none;
+    grid-gap: 15px;
+}
+#characters > * {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#fellowship > * {
+    border: 1px solid black;
+}
+nav a {
+    color: #1b2623;
+    font-size: 32px;
+    font-family: ringbearer;
+    text-decoration: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+.infoCard {
+    position: fixed;
+}
