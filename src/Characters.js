@@ -3,7 +3,7 @@ import {ThemeContext} from './themeContext'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 import { useEffect } from 'react/cjs/react.development'
-
+const token = process.env.REACT_APP_TOKEN
 
 function Characters() {
     const {characters} = React.useContext(ThemeContext)
@@ -57,7 +57,7 @@ function Characters() {
         }
         axios.get(`https://the-one-api.dev/v2//character?race=${filters}`, {
             headers: {
-                'Authorization': `Bearer BvNgVR4Md3VR8AugMg9x`
+                'Authorization': `Bearer ${token}`
             }})
             .then(response => {
                 setFilter(response.data.docs)
@@ -69,7 +69,7 @@ function Characters() {
     useEffect(() => {
         axios.get('https://the-one-api.dev/v2/character', {
             headers: {
-                'Authorization': `Bearer BvNgVR4Md3VR8AugMg9x`
+                'Authorization': `Bearer ${token}`
             }
         })
             .then(response => {

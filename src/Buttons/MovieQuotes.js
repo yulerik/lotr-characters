@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, {useState, useEffect} from 'react'
+const token = process.env.REACT_APP_TOKEN
 
 function MovieQuotes(props) {
     const [quotes, setQuotes] = useState([])
@@ -22,7 +23,7 @@ function MovieQuotes(props) {
     function getQuotes() {
         axios.get(`https://the-one-api.dev/v2//character/${props.id}/quote`, {
             headers: {
-                'Authorization': `Bearer BvNgVR4Md3VR8AugMg9x`
+                'Authorization': `Bearer ${token}`
             }
         })
             .then(response => {

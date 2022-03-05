@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
+const token = process.env.REACT_APP_TOKEN
+
 // import allCharacters from './lotrCharactersAll'
 
 const ThemeContext = React.createContext()
@@ -36,7 +38,7 @@ function ThemeContextProvider(props) {
     function getCharacters() {
         axios.get('https://the-one-api.dev/v2/character', {
             headers: {
-                'Authorization': `Bearer l_xr9m5UDe67uPnLhqIB`
+                'Authorization': `Bearer ${token}`
             }
         })
             .then(response => {
