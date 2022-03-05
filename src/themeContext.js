@@ -36,7 +36,7 @@ function ThemeContextProvider(props) {
     function getCharacters() {
         axios.get('https://the-one-api.dev/v2/character', {
             headers: {
-                'Authorization': `Bearer BvNgVR4Md3VR8AugMg9x`
+                'Authorization': `Bearer l_xr9m5UDe67uPnLhqIB`
             }
         })
             .then(response => {
