@@ -7,7 +7,7 @@ function InfoCard(props) {
     const {characterId} = useParams()
     const {characters} = React.useContext(ThemeContext)
     const character = characters.find(each => each._id === characterId)
-    const {name, race, _id, height, birth, death, realm, wikiUrl, hair, gender,spouse} = character
+    const {name, race, _id, height, birth, death, realm, wikiUrl, gender} = character
 
     return (
         <div>

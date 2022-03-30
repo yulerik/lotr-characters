@@ -1,8 +1,7 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {ThemeContext} from './themeContext'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
-import { useEffect } from 'react/cjs/react.development'
 const token = process.env.REACT_APP_TOKEN
 
 function Characters() {
