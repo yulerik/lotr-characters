@@ -13,17 +13,9 @@ function App() {
     return (
         <>
             <nav>
-                <ul>
-                    <li>
-                        <Link to='/'>Home</Link>
-                    </li>
-                    <li>
-                        <Link to='fellowship'>Fellowship Characters</Link>
-                    </li>
-                    <li>
-                        <Link to='characters'>All LOTR Characters</Link>
-                    </li>
-                </ul>
+                <Link to='/'>Home</Link>
+                <Link to='fellowship'>Fellowship Characters</Link>
+                <Link to='characters'>All LOTR Characters</Link>
             </nav>
             <Routes>
                 <Route path ='./' element={<App />}></Route>

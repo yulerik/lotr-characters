@@ -13,27 +13,25 @@ body {
 nav {
     position: fixed;
     top: 0;
-    height: 150px;
+    height: 8em;
     left: 0;
     width: fill;
-    border-bottom: 1px solid black;
+    border-bottom: .125em solid black;
     background-color: #9e6513;
     display: flex;
     align-items: center;
-
-}
-nav ul {
-    list-style-type: none;
-    display: flex;
     justify-content: space-around;
-    width: 100%
-    /* top: 0; */
 }
-nav li {
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
+nav a {
+    color: #1b2623;
+    font-size: 1.5em;
+    padding: .25rem;
+    font-family: ringbearer;
+    text-decoration: none;
+    transition: border .5s;
+}
+nav a:hover {
+    border-bottom: .25rem solid black;
 }
 footer {
     color: #d1cbbf;
@@ -52,6 +50,15 @@ footer {
 }
 footer a {
     color: #d1cbbf;
+}
+.home-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+.home a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: .125em;
 }
 #fellowship {
     display: grid;
@@ -73,15 +80,13 @@ footer a {
 #fellowship > * {
     border: 1px solid black;
 }
-nav a {
-    color: #1b2623;
-    font-size: 32px;
-    font-family: ringbearer;
-    text-decoration: none;
-}
+
 a {
     color: #333;
     text-decoration: none;
+}
+a:hover {
+    
 }
 .infoCard {
     position: fixed;
